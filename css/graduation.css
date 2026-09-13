@@ -1,0 +1,78 @@
+/* ============================================================
+   Graduation page
+   ============================================================ */
+
+.grad-main {
+    padding-top: var(--nav-h);
+    padding-bottom: 80px;
+}
+
+/* --- Header ------------------------------------------------- */
+.grad-header {
+    padding: 48px 28px 36px;
+    border-bottom: 1px solid rgba(17,17,16,0.1);
+    margin-bottom: 28px;
+}
+
+.grad-back a {
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.08em;
+    color: var(--ink);
+    opacity: 0.45;
+    text-decoration: none;
+    transition: opacity 0.2s;
+}
+
+.grad-back a:hover {
+    opacity: 1;
+}
+
+.grad-title {
+    margin-top: 12px;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+}
+
+/* --- Two-column grid ---------------------------------------- */
+.grad-grid {
+    display: flex;
+    align-items: flex-start;
+    gap: 3px;
+    padding: 0 28px;
+}
+
+.grad-col {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.grad-col img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* --- Responsive --------------------------------------------- */
+@media (max-width: 768px) {
+    .grad-header {
+        padding: 32px 16px 20px;
+    }
+
+    .grad-grid {
+        flex-direction: column;
+        padding: 0 12px;
+        gap: 2px;
+    }
+
+    .grad-col {
+        flex: none;
+        width: 100%;
+        gap: 2px;
+    }
+}
